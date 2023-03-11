@@ -21,6 +21,9 @@
   "settings": {
     "import/resolver": {
       "typescript": {}
+    },
+    "react": {
+      "version": "18.2"
     }
   }
 }
