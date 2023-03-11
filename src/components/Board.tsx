@@ -1,5 +1,6 @@
-import React from 'react'
-import PlayerBase from './PlayerBase'
+import React from 'react';
+import PlayerBase from './PlayerBase';
+import Tracks from './Tracks';
 
 function Board() {
   return (
@@ -11,14 +12,20 @@ function Board() {
     >
       <div className="top">
         <PlayerBase color="#FD8A8A" />
+        <Tracks direction="verticle" />
         <PlayerBase color="#C9F4AA" />
+      </div>
+      <div className="middle">
+        <Tracks direction="horizontal" />
+        <Tracks direction="horizontal" />
       </div>
       <div className="bottom">
         <PlayerBase color="#62CDFF" />
+        <Tracks direction="verticle" />
         <PlayerBase color="#FBFFB1" />
       </div>
     </div>
-  )
+  );
 }
 
-export default Board
+export default Board;
