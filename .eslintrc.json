@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "plugins": ["react-hooks"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
