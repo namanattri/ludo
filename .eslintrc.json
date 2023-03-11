@@ -4,18 +4,23 @@
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
-  "plugins": ["react-hooks"],
+  "plugins": ["react-hooks", "jest", "import"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
   "parserOptions": {
     "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }
