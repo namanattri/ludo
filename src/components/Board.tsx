@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './Home';
 import PlayerBase from './PlayerBase';
 import Tracks from './Tracks';
 
@@ -17,6 +18,7 @@ function Board() {
       </div>
       <div className="middle">
         <Tracks direction="horizontal" />
+        <Home />
         <Tracks direction="horizontal" />
       </div>
       <div className="bottom">
